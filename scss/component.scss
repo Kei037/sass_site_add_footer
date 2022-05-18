@@ -1,0 +1,93 @@
+// component
+.box {
+  display: flex;
+  .items {
+    box-sizing: border-box;
+    padding: 50px;
+    flex: 100%;
+    flex-shrink: 0;
+    font-size: $fontSizeMid;
+    .title {
+      font-size: $titleFontSizemid;
+    }
+    img {
+      width: 100%;
+    }
+  }
+  &.items_2 {
+    .items {
+      flex: 50%;
+    }
+  }
+}
+
+// community table
+table {
+  width: 100%;
+  table-layout: fixed;
+  tr {
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid black;
+    border-collapse: separate;
+    th {
+      padding: 20px 15px;
+      text-align: left;
+      font-weight: 500;
+      font-size: $fontSizeSmall;
+      color: #fff;
+      text-transform: uppercase;
+    }
+    td {
+      padding: 15px;
+      height: 30px;
+      text-align: left;
+      vertical-align: middle; /*테이블 내에서 상하 정렬, default : top*/
+      font-weight: 300;
+      font-size: 14px;
+      color: $fontColorBasic;
+      border-bottom: 1px solid $fontColorPrimary;
+      border-spacing: 0;
+      border-collapse: separate;
+    }
+  }
+}
+.tbl-header {
+  background-color: $tableBg;
+}
+.tbl-content {
+  height: auto;
+  overflow-x: auto;
+  margin-top: 0;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  & + .gbtn {
+    margin-top: 20px;
+    &.right {
+      float: right;
+    }
+  }
+}
+
+// arcodion
+.accordion {
+  dl {
+    margin: 50px auto;
+    dt {
+      font-size: 18px;
+      text-indent: 3em;
+      color: white;
+      line-height: 35px;
+      height: 35px;
+      background: $tableBg;
+    }
+    dd {
+      height: 300px;
+      background: #d4d0c8;
+      p {
+        text-indent: 1em;
+        padding: 20px;
+      }
+    }
+  }
+
+}
